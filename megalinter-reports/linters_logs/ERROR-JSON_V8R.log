@@ -1,0 +1,15 @@
+Results of v8r linter (version 1.0.0)
+See documentation on https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd/descriptors/json_v8r/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /tmp/lint
+Linter raw log:
+ℹ No config file found
+ℹ Processing /tmp/lint/package.json
+ℹ Found schema in https://www.schemastore.org/api/json/catalog.json ...
+ℹ Validating /tmp/lint/package.json against schema from https://json.schemastore.org/package.json ...
+✖ /tmp/lint/package.json is invalid
+
+/tmp/lint/package.json#/name must match pattern "^(?:@[a-z0-9-*~][a-z0-9-*._~]*/)?[a-z0-9-~][a-z0-9-._~]*$"
+
+

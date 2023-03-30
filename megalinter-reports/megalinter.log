@@ -1,0 +1,221 @@
+----------------------------------------------------------------------------------------------------
+------------------------------------ MegaLinter, by OX Security ------------------------------------
+----------------------------------------------------------------------------------------------------
+ - Image Creation Date: 2023-03-26T14:05:26Z
+ - Image Revision: 66108018d9c2160896d8cf34d56f341592d23ffd
+ - Image Version: 66108018d9c2160896d8cf34d56f341592d23ffd
+----------------------------------------------------------------------------------------------------
+The MegaLinter documentation can be found at:
+ - https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd
+----------------------------------------------------------------------------------------------------
+MegaLinter initialization
+
+[Activation] EDITORCONFIG_EDITORCONFIG_CHECKER has been set inactive, as none of these files has been found: ['.editorconfig']
+[Activation] JAVASCRIPT_ES has been set inactive, as none of these files has been found: ['.eslintrc.json', '.eslintrc.yml', '.eslintrc.yaml', '.eslintrc.js', '.eslintrc.cjs', 'package.json:eslintConfig']
+[Activation] JSX_ESLINT has been set inactive, as none of these files has been found: ['.eslintrc.json', '.eslintrc.yml', '.eslintrc.yaml', '.eslintrc.js', '.eslintrc.cjs', 'package.json:eslintConfig']
+[Activation] KUBERNETES_HELM has been set inactive, as none of these files has been found: ['Chart.yml', 'Chart.yaml']
+[Activation] REPOSITORY_GOODCHECK has been set inactive, as none of these files has been found: ['goodcheck.yml']
+[SemgrepLinter] Deactivated because no ruleset has been defined
+[Activation] SPELL_PROSELINT has been set inactive, as none of these files has been found: ['.proselintrc', 'proselint/config.json']
+[Activation] SQL_SQLFLUFF has been set inactive, as none of these files has been found: ['.sqlfluff']
+[Activation] SWIFT_SWIFTLINT has been set inactive, as none of these files has been found: ['.swiftlint.yml']
+[Activation] TSX_ESLINT has been set inactive, as none of these files has been found: ['.eslintrc.json', '.eslintrc.yml', '.eslintrc.yaml', '.eslintrc.js', '.eslintrc.cjs', 'package.json:eslintConfig']
+[Activation] TYPESCRIPT_ES has been set inactive, as none of these files has been found: ['.eslintrc.json', '.eslintrc.yml', '.eslintrc.yaml', '.eslintrc.js', '.eslintrc.cjs', 'package.json:eslintConfig']
+MARKDOWN_REMARK_LINT has been temporary disabled in MegaLinter, please use a previous MegaLinter version or wait for the next one !
+Skipped linters: ACTION_ACTIONLINT, ANSIBLE_ANSIBLE_LINT, EDITORCONFIG_EDITORCONFIG_CHECKER, JAVASCRIPT_ES, JAVASCRIPT_PRETTIER, JSX_ESLINT, KUBERNETES_HELM, KUBERNETES_KUBECONFORM, KUBERNETES_KUBEVAL, MARKDOWN_REMARK_LINT, REPOSITORY_GOODCHECK, REPOSITORY_SEMGREP, SALESFORCE_SFDX_SCANNER_APEX, SALESFORCE_SFDX_SCANNER_AURA, SALESFORCE_SFDX_SCANNER_LWC, SPELL_PROSELINT, SQL_SQLFLUFF, SWIFT_SWIFTLINT, TSX_ESLINT, TYPESCRIPT_ES, TYPESCRIPT_PRETTIER
+To receive reports as email, please set variable EMAIL_REPORTER_EMAIL
+
+MegaLinter now collects the files to analyse
+Listing all files in directory [/tmp/lint], then filter with:
+- File extensions: , .R, .RMD, .Rmd, .bash, .bicep, .c, .c++, .cc, .cdxml, .clj, .cljc, .cljs, .coffee, .cpp, .cs, .css, .cu, .cuh, .cxx, .dart, .dash, .edn, .env, .feature, .go, .gradle, .graphql, .groovy, .gvy, .h, .h++, .hcl, .hh, .hpp, .htm, .html, .hxx, .java, .js, .json, .json5, .jsonc, .ksh, .kt, .kts, .lua, .md, .nf, .p6, .php, .pl, .pl6, .pm, .pm6, .pp, .proto, .ps1, .ps1xml, .psd1, .psm1, .psrc, .pssc, .py, .r, .raku, .rakumod, .rakutest, .rb, .rs, .rst, .saas, .scala, .scss, .sh, .smk, .sql, .t, .tex, .tf, .ts, .vb, .xml, .yaml, .yml
+- File names (regex): Dockerfile, Jenkinsfile, Makefile, Snakefile, package\.json
+- Excluding .gitignored files [0]: 
+Kept [5] files on [7] found files
+
++----MATCHING LINTERS----------------+---------------------+----------------+------------+
+| Descriptor | Linter                | Criteria            | Matching files | Format/Fix |
++------------+-----------------------+---------------------+----------------+------------+
+| COPYPASTE  | jscpd                 |                     | project        | no         |
+| JSON       | jsonlint              | .json               | 1              | no         |
+| JSON       | eslint-plugin-jsonc   | .json|.json5|.jsonc | 1              | no         |
+| JSON       | v8r                   | .json               | 1              | no         |
+| JSON       | prettier              | .json               | 1              | no         |
+| JSON       | npm-package-json-lint | .json|package\.json | project        | no         |
+| REPOSITORY | checkov               |                     | project        | no         |
+| REPOSITORY | devskim               |                     | project        | no         |
+| REPOSITORY | dustilock             |                     | project        | no         |
+| REPOSITORY | git_diff              |                     | project        | no         |
+| REPOSITORY | gitleaks              |                     | project        | no         |
+| REPOSITORY | secretlint            |                     | project        | no         |
+| REPOSITORY | syft                  |                     | project        | no         |
+| REPOSITORY | trivy                 |                     | project        | no         |
+| SPELL      | misspell              |                     | 5              | no         |
+| SPELL      | cspell                |                     | 5              | no         |
+| YAML       | prettier              | .yml|.yaml          | 4              | no         |
+| YAML       | yamllint              | .yml|.yaml          | 4              | no         |
+| YAML       | v8r                   | .yml|.yaml          | 4              | no         |
++------------+-----------------------+---------------------+----------------+------------+
+
+[32m✅ Linted [REPOSITORY] files with [gitleaks] successfully - (0.21s)[0m
+- Using [gitleaks v8.16.1] https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd/descriptors/repository_gitleaks
+- MegaLinter key: [REPOSITORY_GITLEAKS]
+- Rules config: [.gitleaks.toml]
+
+[32m✅ Linted [COPYPASTE] files with [jscpd] successfully - (1.36s)[0m
+- Using [jscpd v3.5.4] https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd/descriptors/copypaste_jscpd
+- MegaLinter key: [COPYPASTE_JSCPD]
+- Rules config: [.jscpd.json]
+
+[32m✅ Linted [YAML] files with [v8r] successfully - (5.21s)[0m
+- Using [v8r v1.0.0] https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd/descriptors/yaml_v8r
+- MegaLinter key: [YAML_V8R]
+- Rules config: identified by [v8r]
+- Number of files analyzed: [4]
+
+[32m✅ Linted [JSON] files with [jsonlint] successfully - (0.67s)[0m
+- Using [jsonlint v14.0.2] https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd/descriptors/json_jsonlint
+- MegaLinter key: [JSON_JSONLINT]
+- Rules config: identified by [jsonlint]
+- Number of files analyzed: [1]
+
+[31m❌ Linted [JSON] files with [v8r]: Found 1 error(s) - (8.26s)[0m
+- Using [v8r v1.0.0] https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd/descriptors/json_v8r
+- MegaLinter key: [JSON_V8R]
+- Rules config: identified by [v8r]
+- Number of files analyzed: [1]
+--Error detail:
+ℹ No config file found
+ℹ Processing /tmp/lint/package.json
+ℹ Found schema in https://www.schemastore.org/api/json/catalog.json ...
+ℹ Validating /tmp/lint/package.json against schema from https://json.schemastore.org/package.json ...
+✖ /tmp/lint/package.json is invalid
+
+/tmp/lint/package.json#/name must match pattern "^(?:@[a-z0-9-*~][a-z0-9-*._~]*/)?[a-z0-9-~][a-z0-9-._~]*$"
+
+
+
+[32m✅ Linted [JSON] files with [prettier] successfully - (1.26s)[0m
+- Using [prettier v2.8.7] https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd/descriptors/json_prettier
+- MegaLinter key: [JSON_PRETTIER]
+- Rules config: identified by [prettier]
+- Number of files analyzed: [1]
+
+[31m❌ Linted [JSON] files with [npm-package-json-lint]: Found 1 error(s) - (1.28s)[0m
+- Using [npm-package-json-lint v6.4.0] https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd/descriptors/json_npm_package_json_lint
+- MegaLinter key: [JSON_NPM_PACKAGE_JSON_LINT]
+- Rules config: [.npmpackagejsonlintrc.json]
+--Error detail:
+
+./package.json
+✖ name-format - node: name - name can no longer contain capital letters
+1 error
+
+
+[32m✅ Linted [JSON] files with [eslint-plugin-jsonc] successfully - (3.2s)[0m
+- Using [eslint-plugin-jsonc v2.7.0] https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd/descriptors/json_eslint_plugin_jsonc
+- MegaLinter key: [JSON_ESLINT_PLUGIN_JSONC]
+- Rules config: [.eslintrc-json.json]
+- Number of files analyzed: [1]
+
+[32m✅ Linted [SPELL] files with [misspell] successfully - (0.12s)[0m
+- Using [misspell v0.3.4] https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd/descriptors/spell_misspell
+- MegaLinter key: [SPELL_MISSPELL]
+- Rules config: identified by [misspell]
+- Number of files analyzed: [5]
+
+[32m✅ Linted [REPOSITORY] files with [trivy] successfully - (16.25s)[0m
+- Using [trivy v0.38.3] https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd/descriptors/repository_trivy
+- MegaLinter key: [REPOSITORY_TRIVY]
+- Rules config: identified by [trivy]
+
+[32m✅ Linted [REPOSITORY] files with [secretlint] successfully - (2.37s)[0m
+- Using [secretlint v6.2.3] https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd/descriptors/repository_secretlint
+- MegaLinter key: [REPOSITORY_SECRETLINT]
+- Rules config: [.secretlintrc.json]
+- Ignore file: [.secretlintignore]
+
+[31m❌ Linted [YAML] files with [yamllint]: Found 1 error(s) - (0.75s)[0m
+- Using [yamllint v1.30.0] https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd/descriptors/yaml_yamllint
+- MegaLinter key: [YAML_YAMLLINT]
+- Rules config: [.yamllint.yml]
+- Number of files analyzed: [4]
+--Error detail:
+/tmp/lint/.mega-linter.yaml
+  1:1       warning  missing document start "---"  (document-start)
+
+/tmp/lint/.yarnrc.yml
+  1:1       warning  missing document start "---"  (document-start)
+
+/tmp/lint/cspell.config.yaml
+  1:1       warning  missing document start "---"  (document-start)
+  7:10      error    no new line character at the end of file  (new-line-at-end-of-file)
+
+/tmp/lint/win32words.yaml
+  1:1       warning  missing document start "---"  (document-start)
+  2:11      error    no new line character at the end of file  (new-line-at-end-of-file)
+
+
+
+[32m✅ Linted [REPOSITORY] files with [git_diff] successfully - (0.01s)[0m
+- Using [git_diff v2.38.4] https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd/descriptors/repository_git_diff
+- MegaLinter key: [REPOSITORY_GIT_DIFF]
+- Rules config: identified by [git_diff]
+
+[33m✅ Linted [YAML] files with [prettier]: Found 1 non blocking error(s) - (1.11s)[0m
+- Using [prettier v2.8.7] https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd/descriptors/yaml_prettier
+- MegaLinter key: [YAML_PRETTIER]
+- Rules config: identified by [prettier]
+- Number of files analyzed: [4]
+--Error detail:
+Checking formatting...
+[warn] tmp/lint/cspell.config.yaml
+[warn] tmp/lint/win32words.yaml
+[warn] Code style issues found in 2 files. Forgot to run Prettier?
+
+
+[31m❌ Linted [SPELL] files with [cspell]: Found 2 error(s) - (5.27s)[0m
+- Using [cspell v6.31.1] https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd/descriptors/spell_cspell
+- MegaLinter key: [SPELL_CSPELL]
+- Rules config: identified by [cspell]
+- Number of files analyzed: [6]
+--Error detail:
+1/6 ./tmp/lint/.mega-linter.yaml 2159.61ms
+2/6 ./tmp/lint/.yarnrc.yml 19.04ms
+3/6 ./tmp/lint/01e1b76a-8f94-4704-8741-df7c481b4f18-megalinter_file_names_cspell.txt 189.60ms X
+/tmp/lint/01e1b76a-8f94-4704-8741-df7c481b4f18-megalinter_file_names_cspell.txt:2:11      - Unknown word (yarnrc)     -- tmp lint yarnrc
+	 Suggestions: [yarns, yarn, yarn's, yarned, yarer]
+4/6 ./tmp/lint/cspell.config.yaml 12.24ms
+5/6 ./tmp/lint/package.json 276.37ms X
+/tmp/lint/package.json:6:20      - Unknown word (Warres)     -- "author": "Megan Warres",
+	 Suggestions: [Warred, warren, Warren, Warrens, Wares]
+6/6 ./tmp/lint/win32words.yaml 5.52ms
+CSpell: Files checked: 6, Issues found: 2 in 2 files
+
+
+[32m✅ Linted [REPOSITORY] files with [checkov] successfully - (24.28s)[0m
+- Using [checkov v2.3.120] https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd/descriptors/repository_checkov
+- MegaLinter key: [REPOSITORY_CHECKOV]
+- Rules config: [.checkov.yml]
+
+
++----SUMMARY----+-----------------------+---------------+-------+-------+--------+--------------+
+| Descriptor    | Linter                | Mode          | Files | Fixed | Errors | Elapsed time |
++---------------+-----------------------+---------------+-------+-------+--------+--------------+
+| ✅ COPYPASTE  | jscpd                 | project       |   n/a |       |      0 |        1.36s |
+| ✅ JSON       | eslint-plugin-jsonc   | list_of_files |     1 |       |      0 |         3.2s |
+| ✅ JSON       | jsonlint              | list_of_files |     1 |       |      0 |        0.67s |
+| ❌ JSON       | npm-package-json-lint | project       |   n/a |       |      1 |        1.28s |
+| ✅ JSON       | prettier              | list_of_files |     1 |       |      0 |        1.26s |
+| ❌ JSON       | v8r                   | list_of_files |     1 |       |      1 |        8.26s |
+| ✅ REPOSITORY | checkov               | project       |   n/a |       |      0 |       24.28s |
+| ✅ REPOSITORY | gitleaks              | project       |   n/a |       |      0 |        0.21s |
+| ✅ REPOSITORY | git_diff              | project       |   n/a |       |      0 |        0.01s |
+| ✅ REPOSITORY | secretlint            | project       |   n/a |       |      0 |        2.37s |
+| ✅ REPOSITORY | trivy                 | project       |   n/a |       |      0 |       16.25s |
+| ❌ SPELL      | cspell                | list_of_files |     6 |       |      2 |        5.27s |
+| ✅ SPELL      | misspell              | list_of_files |     5 |       |      0 |        0.12s |
+| ◬ YAML        | prettier              | list_of_files |     4 |       |      1 |        1.11s |
+| ✅ YAML       | v8r                   | list_of_files |     4 |       |      0 |        5.21s |
+| ❌ YAML       | yamllint              | list_of_files |     4 |       |      1 |        0.75s |
++---------------+-----------------------+---------------+-------+-------+--------+--------------+
+

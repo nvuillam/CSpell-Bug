@@ -1,0 +1,7 @@
+version: "0.2"
+language: en-US
+usePnP: true
+import:
+  - "@cspell/dict-win32/cspell-ext.json"
+dictionaries:
+  - win32

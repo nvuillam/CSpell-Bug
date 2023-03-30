@@ -1,0 +1,21 @@
+Results of yamllint linter (version 1.30.0)
+See documentation on https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd/descriptors/yaml_yamllint/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /tmp/lint
+Linter raw log:
+/tmp/lint/.mega-linter.yaml
+  1:1       warning  missing document start "---"  (document-start)
+
+/tmp/lint/.yarnrc.yml
+  1:1       warning  missing document start "---"  (document-start)
+
+/tmp/lint/cspell.config.yaml
+  1:1       warning  missing document start "---"  (document-start)
+  7:10      error    no new line character at the end of file  (new-line-at-end-of-file)
+
+/tmp/lint/win32words.yaml
+  1:1       warning  missing document start "---"  (document-start)
+  2:11      error    no new line character at the end of file  (new-line-at-end-of-file)
+
+

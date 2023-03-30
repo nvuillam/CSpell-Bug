@@ -1,0 +1,42 @@
+Results of cspell linter (version 6.31.1)
+See documentation on https://megalinter.io/66108018d9c2160896d8cf34d56f341592d23ffd/descriptors/spell_cspell/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /tmp/lint
+Linter raw log:
+1/6 ./tmp/lint/.mega-linter.yaml 2159.61ms
+2/6 ./tmp/lint/.yarnrc.yml 19.04ms
+3/6 ./tmp/lint/01e1b76a-8f94-4704-8741-df7c481b4f18-megalinter_file_names_cspell.txt 189.60ms X
+/tmp/lint/01e1b76a-8f94-4704-8741-df7c481b4f18-megalinter_file_names_cspell.txt:2:11      - Unknown word (yarnrc)     -- tmp lint yarnrc
+	 Suggestions: [yarns, yarn, yarn's, yarned, yarer]
+4/6 ./tmp/lint/cspell.config.yaml 12.24ms
+5/6 ./tmp/lint/package.json 276.37ms X
+/tmp/lint/package.json:6:20      - Unknown word (Warres)     -- "author": "Megan Warres",
+	 Suggestions: [Warred, warren, Warren, Warrens, Wares]
+6/6 ./tmp/lint/win32words.yaml 5.52ms
+CSpell: Files checked: 6, Issues found: 2 in 2 files
+
+
+You can skip this misspellings by defining the following .cspell.json file at the root of your repository
+Of course, please correct real typos before :)
+
+{
+    "version": "0.2",
+    "language": "en",
+    "ignorePaths": [
+        "**/node_modules/**",
+        "**/vscode-extension/**",
+        "**/.git/**",
+        "**/.pnpm-lock.json",
+        ".vscode",
+        "package-lock.json",
+        "megalinter-reports"
+    ],
+    "words": [
+        "Warres",
+        "yarnrc"
+    ]
+}
+
+
+You can also copy-paste megalinter-reports/LINTER_DEFAULT at the root of your repository
