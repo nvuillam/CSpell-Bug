@@ -14,3 +14,4 @@ SPELL_CSPELL_CONFIG_FILE: LINTER_DEFAULT # cspell.config.yaml contains import: [
 SPELL_CSPELL_PRE_COMMANDS:
   - command: npm install @cspell/dict-win32
     cwd: "workspace"
+
