@@ -19,10 +19,10 @@ jobs:
       - name: MegaLinter
         id: MegaLinter
         run: >
-          npx -- mega-linter-runner@v6.21.0 
+          npx -- mega-linter-runner@beta
           --remove-container 
           --flavor javascript 
-          --release v6.21.0
+          --release beta
 
       
   
