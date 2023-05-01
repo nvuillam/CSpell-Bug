@@ -5,9 +5,5 @@
   "main": "index.js",
   "author": "Megan Warres",
   "license": "MIT",
-  "devDependencies": {
-    "cspell": "6.31.1",
-    "@cspell/dict-win32": "2.0.1"
-  },
   "packageManager": "yarn@3.5.0"
 }
