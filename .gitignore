@@ -1,2 +1,2 @@
-megalinter-reports/
-.sfdx/
+**/megalinter-reports/**
+**/.sfdx/**
