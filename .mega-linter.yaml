@@ -3,6 +3,7 @@ DEFAULT_BRANCH: main
 SPELL_CSPELL_CONFIG_FILE: LINTER_DEFAULT
 SPELL_CSPELL_PRE_COMMANDS:
   - command: "npm install @cspell/dict-win32@2.0.1"
+    cwd: "workspace"
 DISABLE:
   - COPYPASTE
   - REPOSITORY
