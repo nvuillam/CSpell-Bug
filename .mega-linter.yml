@@ -2,7 +2,7 @@ CLEAR_REPORT_FOLDER: true
 DEFAULT_BRANCH: main
 SPELL_CSPELL_CONFIG_FILE: LINTER_DEFAULT
 SPELL_CSPELL_PRE_COMMANDS:
-  - command: "npm install"
+  - command: "npm install @cspell/dict-win32"
     cwd: "workspace"
 DISABLE:
   - COPYPASTE
