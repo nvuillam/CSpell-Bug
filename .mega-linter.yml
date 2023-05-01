@@ -1,9 +1,5 @@
 CLEAR_REPORT_FOLDER: true
 DEFAULT_BRANCH: main
-SPELL_CSPELL_CONFIG_FILE: LINTER_DEFAULT
-SPELL_CSPELL_PRE_COMMANDS:
-  - command: npm install @cspell/dict-win32 && ls && ls node_modules
-    cwd: "workspace"
 DISABLE:
   - COPYPASTE
   - REPOSITORY
@@ -12,3 +8,9 @@ DISABLE_LINTERS:
   - YAML_V8R
 DISABLE_ERRORS_LINTERS:
   - YAML_YAMLLINT
+
+# Cspell variables
+SPELL_CSPELL_CONFIG_FILE: LINTER_DEFAULT # cspell.config.yaml contains import: ["@cspell/dict-win32/cspell-ext.json]
+SPELL_CSPELL_PRE_COMMANDS:
+  - command: npm install @cspell/dict-win32
+    cwd: "workspace"
