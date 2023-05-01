@@ -1,11 +1,7 @@
 name: Test
 on:
   pull_request:
-    branches:
-      - main
-  push:
-    branches:
-      - main
+
 permissions: {}
 jobs:
   mega-linter:
@@ -19,10 +15,10 @@ jobs:
       - name: MegaLinter
         id: MegaLinter
         run: >
-          npx -- mega-linter-runner@v6.21.0 
+          npx -- mega-linter-runner@beta
           --remove-container 
-          --flavor javascript 
-          --release v6.21.0
+          --flavor documentation 
+          --release beta
 
       
   

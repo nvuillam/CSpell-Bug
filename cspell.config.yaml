@@ -5,3 +5,9 @@ import:
   - "@cspell/dict-win32/cspell-ext.json"
 dictionaries:
   - win32
+words:
+  - stefanzweifel
+  - sfdx
+  - yarnrc
+  - cspellbug
+  - Warres
